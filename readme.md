@@ -4,5 +4,5 @@
 ---
 
 ## Day 1
-## Drum kit JS
-Here we will create a drum kit using the keyboard keys and do some javascript magic with it.
+## Music kit JS
+Here we will create a music kit using the keyboard keys and do some javascript magic with it.

@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #141517;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  width: 100%;
+  max-width: 1000px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+
+#main h1 {
+  color: #fff;
+}
+#main h3 {
+  color: #71717a;
+  font-weight: 400;
+}
+
+#keyboard {
+  background-color: #0a0a0a;
+  padding: 20px;
+  border: 1px solid #18181b;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.key {
+  width: 100px;
+  height: 90px;
+  padding: 5px;
+  color: white;
+  background-color: #1a1a1a; /* Darker base color */
+  border: 1px solid #0f0f0f; /* Darker border */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.15),
+    /* Lighter inner shadow */ 0 3px 6px rgba(0, 0, 0, 0.6),
+    /* Darker bottom shadow */ 0 -1px 2px rgba(255, 255, 255, 0.1); /* Subtle top highlight */
+  background-image: linear-gradient(
+    to bottom,
+    #222222,
+    /* Darker gradient start */ #0d0d0d /* Darker gradient end */
+  ); /* Darkened gradient */
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  scale: 1;
+}
+.key span {
+    color: #71717a;
+    font-weight:400;
+    font-size: medium;
+}
+
+.playing {
+  border-color: #2563eb;
+  scale: 1.1;
+  transition: all 0.10s;
+}
