@@ -66,13 +66,26 @@ body {
   scale: 1;
 }
 .key span {
-    color: #71717a;
-    font-weight:400;
-    font-size: medium;
+  color: #71717a;
+  font-weight: 400;
+  font-size: medium;
 }
 
 .playing {
   border-color: #2563eb;
   scale: 1.1;
-  transition: all 0.10s;
+  transition: all 0.1s;
+}
+
+#waves {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #18181b;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
 }
