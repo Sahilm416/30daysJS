@@ -6,3 +6,7 @@
 ## Day 1
 ## Music kit JS
 Here we will create a music kit using the keyboard keys and do some javascript magic with it.
+
+## Day 2
+## Clock with JS
+Here we will create an analog clock with the javascript.
