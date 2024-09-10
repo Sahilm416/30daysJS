@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Variables</title>
+  </head>
+  <body>
+    <h1>CSS Variables</h1>
+    <div class="main">
+      <div>
+        <label for="blur">Blur</label
+        ><input name="blur" type="range" min="0" value="10" />
+      </div>
+      <div>
+        <label for="spacing">Spacing</label>
+        <input type="range" name="spacing" min="0" value="10" />
+      </div>
+      <div>
+        <label for="base">Base</label>
+        <input type="color" name="base" value="#2be33c" />
+      </div>
+    </div>
+    <div class="img-container">
+      <img src="shraddha.jpg" draggable="false" alt="shraddha kapoor" />
+    </div>
+
+    <script>
+      const handle_update = (e) => {
+        const value =
+          e.target.name == "spacing" || e.target.name == "blur"
+            ? `${e.target.value}px`
+            : e.target.value;
+        document.documentElement.style.setProperty(
+          `--${e.target.name}`,
+          `${value}`
+        );
+      };
+      const inputs = document.querySelectorAll(".main input");
+      inputs.forEach((input) => {
+        input.addEventListener("input", handle_update);
+      });
+    </script>
+  </body>
+</html>

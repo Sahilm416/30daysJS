@@ -1,0 +1,42 @@
+:root {
+  --spacing: 0px;
+  --base: #2be33c;
+  --blur: 0px;
+}
+body {
+  padding: 100px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: skyblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.img-container {
+  flex-grow: 0;
+  padding: var(--spacing);
+  background-color: var(--base);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.img-container img {
+  filter: blur(var(--blur));
+  max-width: 500px;
+  border-radius: 12px;
+  padding: 0px;
+  margin: 0px;
+}
