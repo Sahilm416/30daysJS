@@ -21,3 +21,9 @@ Here we will create an analog clock with the javascript.
 ## CSS variables
 
 We'll use CSS `--variables` with the JS `document.documentElement.style.setProperty('--variableName' , 'value')`
+
+## Day 4
+
+## Array Methods
+
+Different array methods used in javascript arrays like map, reduce, filter.
