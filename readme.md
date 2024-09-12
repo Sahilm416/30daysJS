@@ -27,3 +27,9 @@ We'll use CSS `--variables` with the JS `document.documentElement.style.setPrope
 ## Array Methods
 
 Different array methods used in javascript arrays like map, reduce, filter.
+
+## Day 5
+
+## CSS Hover Cards using JS
+
+Just some CSS like stuff using JS.
