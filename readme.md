@@ -33,3 +33,9 @@ Different array methods used in javascript arrays like map, reduce, filter.
 ## CSS Hover Cards using JS
 
 Just some CSS like stuff using JS.
+
+## Day 6
+
+## Search Utility with JavaScript
+
+Implementing search bar for searching the cities in US.
