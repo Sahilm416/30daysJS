@@ -39,3 +39,9 @@ Just some CSS like stuff using JS.
 ## Search Utility with JavaScript
 
 Implementing search bar for searching the cities in US.
+
+## day 7
+
+## Array Cardio 2
+
+Using some JavaScript array methods like `some()`, `find()` and `splice()`
