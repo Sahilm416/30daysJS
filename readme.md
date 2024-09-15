@@ -45,3 +45,9 @@ Implementing search bar for searching the cities in US.
 ## Array Cardio 2
 
 Using some JavaScript array methods like `some()`, `find()` and `splice()`
+
+## day 8
+
+## Fun With HTML Canvas
+
+Drawing some lines on HTML canvas
