@@ -51,3 +51,9 @@ Using some JavaScript array methods like `some()`, `find()` and `splice()`
 ## Fun With HTML Canvas
 
 Drawing some lines on HTML canvas
+
+# day 9
+
+Devtools Domination
+
+Using devetools different console methods like `console.dir()`, `console.group()` and `console.time()`.
