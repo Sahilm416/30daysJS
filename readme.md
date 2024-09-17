@@ -57,3 +57,9 @@ Drawing some lines on HTML canvas
 Devtools Domination
 
 Using devetools different console methods like `console.dir()`, `console.group()` and `console.time()`.
+
+# day 10
+
+Checkboxes
+
+Using JS to select multiple checkboxes.
