@@ -19,11 +19,9 @@ document.addEventListener("keyup", (e) => {
 
 const handle_checked = (e) => {
   let selected_task = document.querySelector(`label[for="${e.target.id}"]`);
-  if (e.target.checked) {
-    selected_task.style.textDecoration = "line-through";
-  } else {
-    selected_task.style.textDecoration = "none";
-  }
+  selected_task.style.textDecoration = e.target.checked
+    ? "line-through"
+    : "none";
   if (is_shift) {
     if (last_checked) {
       let last_index = parseInt(last_checked.dataset.index);
