@@ -63,3 +63,9 @@ Using devetools different console methods like `console.dir()`, `console.group()
 Checkboxes
 
 Using JS to select multiple checkboxes.
+
+# day 11
+
+Video Player
+
+Make your own custom video player

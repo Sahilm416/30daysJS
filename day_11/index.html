@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <h1>Video Player</h1>
+    <main>
+      <div>
+        <video
+          class="player"
+          src="edit.mp4"
+        ></video>
+        <div class="controls">
+          <div>
+            <div class="progress">
+              <span class="timeline">
+                <!-- <span class="dot"></span> -->
+              </span>
+            </div>
+          </div>
+          <div>
+            <button class="play_button">play</button>
+            <button class="mute_button">Mute</button>
+            <select class="player_speed" name="speed" id="speed">
+              <option value="0.25">0.25X</option>
+              <option value="0.50">0.50X</option>
+              <option value="0.75">0.75X</option>
+              <option selected value="1">1X</option>
+              <option value="1.25">1.25X</option>
+              <option value="1.50">1.50</option>
+              <option value="1.75">1.75X</option>
+              <option value="2">2X</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
