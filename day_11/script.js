@@ -6,6 +6,20 @@ const progress_container = document.querySelector(".progress");
 const progress = document.querySelector(".progress > .timeline");
 const main_container = document.querySelector("main");
 
+const skip = document.querySelector(".skip");
+const back = document.querySelector(".back");
+const full_screen = document.querySelector(".full_screen");
+
+[skip, back].forEach((ele) =>
+  ele.addEventListener("click", (e) => {
+    const value = e.target.dataset.time;
+    player.currentTime += parseInt(value);
+  })
+);
+
+full_screen.addEventListener("click", (e) => {
+  player.requestFullscreen();
+});
 
 console.dir(player);
 

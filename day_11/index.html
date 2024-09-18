@@ -10,10 +10,7 @@
     <h1>Video Player</h1>
     <main>
       <div>
-        <video
-          class="player"
-          src="edit.mp4"
-        ></video>
+        <video class="player" src="edit.mp4"></video>
         <div class="controls">
           <div>
             <div class="progress">
@@ -25,6 +22,7 @@
           <div>
             <button class="play_button">play</button>
             <button class="mute_button">Mute</button>
+           
             <select class="player_speed" name="speed" id="speed">
               <option value="0.25">0.25X</option>
               <option value="0.50">0.50X</option>
@@ -35,6 +33,9 @@
               <option value="1.75">1.75X</option>
               <option value="2">2X</option>
             </select>
+            <button class="skip" data-time="-10">-10s</button>
+            <button class="back" data-time="+10">+10s</button>
+            <button class="full_screen">full screen</button>
           </div>
         </div>
       </div>
