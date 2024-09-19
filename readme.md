@@ -69,3 +69,9 @@ Using JS to select multiple checkboxes.
 Video Player
 
 Make your own custom video player
+
+# day 12
+
+Key Sequence
+
+Press certain sequence of keys to do something.

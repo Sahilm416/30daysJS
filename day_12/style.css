@@ -1,0 +1,19 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h3 {
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+  border-radius: 50px;
+}
