@@ -1,0 +1,44 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.heading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 100px 0px;
+}
+.image {
+  transition: all 0.5s ease-in-out;
+  width: 500px;
+  height: 600px;
+  background-color: yellow;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+.in-view {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.image:nth-child(even) {
+  background-color: blue;
+}

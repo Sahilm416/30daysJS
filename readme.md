@@ -75,3 +75,9 @@ Make your own custom video player
 Key Sequence
 
 Press certain sequence of keys to do something.
+
+# day 13
+
+Scroll View
+
+Animate element when in viewport.
