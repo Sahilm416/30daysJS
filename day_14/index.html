@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays and Objects</title>
+  </head>
+  <body>
+    <h1>Arrays and Objects</h1>
+
+    <script>
+      //The premitive data types like number, string, boolean are copied by value so changing one doesnt affect the other.
+      let a = 1;
+      let b = a;
+      a = 3;
+      console.log(a, b);
+
+      //same with string and boolean
+
+      //Now Arrays are different because they are not copied but refernced
+
+      let arr = [1, 2, 3];
+      let arr_2 = arr;
+
+      arr[0] = "ok";
+
+      console.log(arr, arr_2); //Both the arrays have the same values as they reference to same data.
+
+      //How to copy arrays?
+      //1. Spread Operator
+      let arr_3 = [1, 2, 3];
+      let arr_4 = [...arr_3];
+
+      arr_3[0] = "ok";
+      console.log(arr_3, arr_4); // Both arrays are different
+
+      // 2. concat
+
+      arr_5 = [].concat(arr_4);
+
+      //Now Objects are also same as arrays i.e. they reference th values
+
+      let obj_1 = { name: "abc", value: 1 };
+      let obj_2 = obj_1;
+
+      obj_1.name = "xyz";
+
+      console.log(obj_1, obj_2); //same values
+
+      //How to copy objects?
+      //1. Spread Operator
+
+      let obj_3 = { ...obj_2 };
+
+      obj_3.name = "PQR";
+      console.log(obj_3, obj_2);
+
+      //2.assign
+      let obj_4 = Object.assign({}, obj_3);
+      console.log(obj_4);
+
+      //4. JSON.parse and stringify
+
+      let obj_5 = JSON.parse(JSON.stringify(obj_4));
+    </script>
+  </body>
+</html>

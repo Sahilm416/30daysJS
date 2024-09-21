@@ -81,3 +81,9 @@ Press certain sequence of keys to do something.
 Scroll View
 
 Animate element when in viewport.
+
+# day 14
+
+Object and Arrays (Reference VS Copy)
+
+Some methods where we can copy the referenced data types
