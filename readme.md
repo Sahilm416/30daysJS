@@ -87,3 +87,15 @@ Animate element when in viewport.
 Object and Arrays (Reference VS Copy)
 
 Some methods where we can copy the referenced data types
+
+# day 15
+
+LocalStorage
+
+Make a task list with persistent storage using local storage
+
+# day 16
+
+CSS Shadow
+
+Use `mousemove` event to adjust shadow position
