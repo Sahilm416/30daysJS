@@ -99,3 +99,7 @@ Make a task list with persistent storage using local storage
 CSS Shadow
 
 Use `mousemove` event to adjust shadow position
+
+# day 17
+
+sort titles without articles like `a`, `an` and `the`
