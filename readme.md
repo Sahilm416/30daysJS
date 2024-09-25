@@ -102,4 +102,12 @@ Use `mousemove` event to adjust shadow position
 
 # day 17
 
+Sorting
+
 sort titles without articles like `a`, `an` and `the`
+
+# day 18
+
+Reduce the time Array
+
+use reduce to calculate time through time stamps
