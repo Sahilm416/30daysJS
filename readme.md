@@ -111,3 +111,9 @@ sort titles without articles like `a`, `an` and `the`
 Reduce the time Array
 
 use reduce to calculate time through time stamps
+
+# day 19
+
+Webcam fun
+
+Stream webcam video to a video element and again stream it to canvas by the `drawImage()` method with some snapshots.
