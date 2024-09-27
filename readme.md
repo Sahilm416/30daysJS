@@ -117,3 +117,9 @@ use reduce to calculate time through time stamps
 Webcam fun
 
 Stream webcam video to a video element and again stream it to canvas by the `drawImage()` method with some snapshots.
+
+# day 20
+
+Speech Recognition
+
+Window object method to do speech recognition.
