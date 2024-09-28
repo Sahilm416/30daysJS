@@ -123,3 +123,9 @@ Stream webcam video to a video element and again stream it to canvas by the `dra
 Speech Recognition
 
 Window object method to do speech recognition.
+
+# day 21
+
+Geolocation Fun
+
+Use navigator object to get location and other information.
