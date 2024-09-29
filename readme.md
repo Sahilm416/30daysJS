@@ -129,3 +129,9 @@ Window object method to do speech recognition.
 Geolocation Fun
 
 Use navigator object to get location and other information.
+
+# day 22
+
+Hover with JS
+
+Use `getBoundingClientRect()` and do some hover magic.
