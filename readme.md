@@ -135,3 +135,9 @@ Use navigator object to get location and other information.
 Hover with JS
 
 Use `getBoundingClientRect()` and do some hover magic.
+
+# day 23
+
+Speech Synthesis
+
+Have some fun with speech synthesis by `const msg = new SpeechSynthesisUtterance();` and `speechSynthesis` global object.
