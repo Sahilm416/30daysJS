@@ -141,3 +141,8 @@ Use `getBoundingClientRect()` and do some hover magic.
 Speech Synthesis
 
 Have some fun with speech synthesis by `const msg = new SpeechSynthesisUtterance();` and `speechSynthesis` global object.
+
+# day 24
+
+Sticky Nav
+Use JS to make a sticky navigation bar
