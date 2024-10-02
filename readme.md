@@ -145,4 +145,11 @@ Have some fun with speech synthesis by `const msg = new SpeechSynthesisUtterance
 # day 24
 
 Sticky Nav
+
 Use JS to make a sticky navigation bar
+
+# day 25
+
+Click Bubble
+
+Ways to handle click event on nested elements.
