@@ -153,3 +153,9 @@ Use JS to make a sticky navigation bar
 Click Bubble
 
 Ways to handle click event on nested elements.
+
+# day 26
+
+Crazy dropdown
+
+Create a dropdown with some images and text with a sliding effect.
