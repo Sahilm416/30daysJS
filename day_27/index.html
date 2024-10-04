@@ -63,42 +63,42 @@
       </div>
     </div>
     <script>
-    //   const boxes = document.querySelectorAll(".box");
-    //   boxes.forEach((box) => {
-    //     box.addEventListener("mousedown", () => {
-    //       box.classList.add("active");
-    //     });
-    //     box.addEventListener("mouseup", () => {
-    //       box.classList.remove("active");
-    //     });
-    //     box.addEventListener("mouseleave", () => {
-    //       box.classList.remove("active");
-    //     });
-    //   });
+      const boxes = document.querySelectorAll(".box");
+      boxes.forEach((box) => {
+        box.addEventListener("mousedown", () => {
+          box.classList.add("active");
+        });
+        box.addEventListener("mouseup", () => {
+          box.classList.remove("active");
+        });
+        box.addEventListener("mouseleave", () => {
+          box.classList.remove("active");
+        });
+      });
 
       const container = document.querySelector(".container");
       let isDragging = false;
       let startX;
       let scrollLeft;
 
-    //   container.addEventListener("mousedown", (e) => {
-    //     isDragging = true;
-    //     startX = e.pageX - container.offsetLeft;
-    //     scrollLeft = container.scrollLeft;
-    //   });
-    //   container.addEventListener("mouseleave", () => {
-    //     isDragging = false;
-    //   });
-    //   container.addEventListener("mouseup", () => {
-    //     isDragging = false;
-    //   });
-    //   container.addEventListener("mousemove", (e) => {
-    //     if (!isDragging) return;
-    //     e.preventDefault();
-    //     const x = e.pageX - container.offsetLeft;
-    //     const walk = (x - startX) * 1;
-    //     container.scrollLeft = scrollLeft - walk;
-    //   });
+      container.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        startX = e.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+      });
+      container.addEventListener("mouseleave", () => {
+        isDragging = false;
+      });
+      container.addEventListener("mouseup", () => {
+        isDragging = false;
+      });
+      container.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startX) * 1;
+        container.scrollLeft = scrollLeft - walk;
+      });
 
       // Add wheel event listener for horizontal scrolling
       container.addEventListener("wheel", (e) => {
