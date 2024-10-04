@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll and Click</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding: 0px 100px;
+      }
+      .container {
+        display: flex;
+        width: 90%;
+        padding: 0px 100px;
+        overflow-x: scroll;
+        background-color: aquamarine;
+        cursor: grab;
+        scroll-behavior: smooth;
+      }
+      .box {
+        user-select: none;
+        border-radius: 10px;
+        flex-shrink: 0;
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(to right, #000, #c43131);
+        margin: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.9;
+        transition: all 0.1s ease-in-out;
+      }
+      .box.active {
+        scale: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grab and Scroll</h1>
+    <div class="container">
+      <div class="box">
+        <h2>Box 1</h2>
+      </div>
+      <div class="box">
+        <h2>Box 2</h2>
+      </div>
+      <div class="box">
+        <h2>Box 3</h2>
+      </div>
+      <div class="box">
+        <h2>Box 4</h2>
+      </div>
+      <div class="box">
+        <h2>Box 5</h2>
+      </div>
+    </div>
+    <script>
+    //   const boxes = document.querySelectorAll(".box");
+    //   boxes.forEach((box) => {
+    //     box.addEventListener("mousedown", () => {
+    //       box.classList.add("active");
+    //     });
+    //     box.addEventListener("mouseup", () => {
+    //       box.classList.remove("active");
+    //     });
+    //     box.addEventListener("mouseleave", () => {
+    //       box.classList.remove("active");
+    //     });
+    //   });
+
+      const container = document.querySelector(".container");
+      let isDragging = false;
+      let startX;
+      let scrollLeft;
+
+    //   container.addEventListener("mousedown", (e) => {
+    //     isDragging = true;
+    //     startX = e.pageX - container.offsetLeft;
+    //     scrollLeft = container.scrollLeft;
+    //   });
+    //   container.addEventListener("mouseleave", () => {
+    //     isDragging = false;
+    //   });
+    //   container.addEventListener("mouseup", () => {
+    //     isDragging = false;
+    //   });
+    //   container.addEventListener("mousemove", (e) => {
+    //     if (!isDragging) return;
+    //     e.preventDefault();
+    //     const x = e.pageX - container.offsetLeft;
+    //     const walk = (x - startX) * 1;
+    //     container.scrollLeft = scrollLeft - walk;
+    //   });
+
+      // Add wheel event listener for horizontal scrolling
+      container.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        container.scrollLeft += e.deltaY * 5;
+      });
+
+      console.log(Math.abs(1));
+    </script>
+  </body>
+</html>

@@ -159,3 +159,9 @@ Ways to handle click event on nested elements.
 Crazy dropdown
 
 Create a dropdown with some images and text with a sliding effect.
+
+# day 27
+
+Drag and Scroll
+
+create a drag and scroll functionality
