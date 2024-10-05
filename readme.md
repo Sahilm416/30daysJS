@@ -165,3 +165,9 @@ Create a dropdown with some images and text with a sliding effect.
 Drag and Scroll
 
 create a drag and scroll functionality
+
+# day 28
+
+Video Speed Controller
+
+Create a video speed controller with a custom UI

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Controller UI</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .video-container {
+        width: 80%;
+        max-width: 800px;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+      }
+      .video {
+        width: 80%;
+        height: auto;
+      }
+      .video-speed {
+        width: 80px;
+        height: 60%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        border: 2px solid black;
+        overflow: hidden;
+        cursor: grab;
+        user-select: none;
+        background: linear-gradient(to bottom, #1073ff, #fff);
+      }
+      .video-speed .speed {
+        position: absolute;
+        z-index: 3;
+      }
+      .video-speed .fill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+        background-color: red;
+        transition: height 0.1s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <video src="/day_11/edit.mp4" class="video" controls loop></video>
+      <div class="video-speed">
+        <span class="speed">1.0</span>
+        <span class="fill"></span>
+      </div>
+    </div>
+    <script>
+      const video = document.querySelector(".video");
+      const videoSpeed = document.querySelector(".video-speed");
+      const fill = document.querySelector(".fill");
+      const speed = document.querySelector(".speed");
+      let isDragging = false;
+
+      videoSpeed.addEventListener("mousedown", () => {
+        isDragging = true;
+      });
+
+      videoSpeed.addEventListener("mouseup", () => {
+        isDragging = false;
+      });
+
+      videoSpeed.addEventListener("mouseleave", () => {
+        isDragging = false;
+      });
+
+      const debounce = (func, delay) => {
+        let timeout;
+        return (...args) => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            func(...args);
+          }, delay);
+        };
+      };
+
+      const handleMove = (e) => {
+        if (!isDragging) return;
+        const speed_rect = fill.getBoundingClientRect();
+        const control_height = videoSpeed.getBoundingClientRect().height;
+
+        const pos = (
+          ((speed_rect.bottom - e.clientY) / videoSpeed.offsetHeight) *
+          2
+        ).toFixed(2);
+
+        if (pos >= 0.1 && pos <= 2) {
+          fill.style.height = `${speed_rect.bottom - e.clientY}px`;
+          speed.textContent = pos;
+          video.playbackRate = pos;
+        }
+      };
+      const handleSpeed = debounce(handleMove, 10);
+      videoSpeed.addEventListener("mousemove", handleSpeed);
+    </script>
+  </body>
+</html>
