@@ -171,3 +171,9 @@ create a drag and scroll functionality
 Video Speed Controller
 
 Create a video speed controller with a custom UI
+
+# day 29
+
+Timer
+
+Create a timer and a stopwatch with custom UI
