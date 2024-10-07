@@ -177,3 +177,9 @@ Create a video speed controller with a custom UI
 Timer
 
 Create a timer and a stopwatch with custom UI
+
+# day 30
+
+Whack-a-dolphin
+
+Create a whack-a-dolphin game with custom UI
